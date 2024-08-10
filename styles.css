@@ -1,0 +1,451 @@
+body {
+    background-color: #1d1919;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.textItem {
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.containercard {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#title {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to right, #392ada, #1b9b25);
+    color: white;
+    width: 100%;
+}
+
+header .logo {
+    max-width: 100px;
+    margin-left: 37%;
+}
+
+header h1 {
+    font-size: 2.4em;
+    
+}
+
+header {
+    font-size: 20px;
+}
+
+.intro {
+    width: 95%;
+    padding: 2%;
+    margin-left: 2.5%;
+    color: #d3d3d3;
+    text-align: justify;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #2b69dd, #1b9b25);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.brand p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: 800;
+    padding: 20;
+}
+
+.card {
+    background: linear-gradient(to right, #079AFA, #503EC7);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+}
+.card h2 {
+    font-size: 20px;
+    margin-top: 0;
+    color: #d3d3d3;
+}
+.card p {
+    font-size: 18px;
+    color: #d3d3d3;
+}
+
+.carousel {
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 10px;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.indicators span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicators span.active {
+    background-color: white;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .textItem {
+        color: white;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .containercard {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    #title {
+        font-size: 1.1em;
+        text-align: center;
+    }
+    
+    header {
+        background: linear-gradient(to right, #392ada, #1b9b25);
+        color: white;
+        width: 100%;
+    }
+    
+    header .logo {
+        max-width: 100px;
+        margin-left: 37%;
+    }
+    
+    header h1 {
+        font-size: 2.4em;
+        
+    }
+    
+    header {
+        font-size: 20px;
+    }
+    
+    .intro {
+        width: 95%;
+        padding: 2%;
+        margin-left: 2.5%;
+        color: #d3d3d3;
+        text-align: justify;
+    }
+    
+    h2 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        background: linear-gradient(to right, #2b69dd, #1b9b25);
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .brand p {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: small;
+        font-weight: 800;
+        padding: 20;
+    }
+    
+    .card {
+        background: linear-gradient(to right, #079AFA, #503EC7);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 320px;
+    }
+    .card h2 {
+        font-size: 20px;
+        margin-top: 0;
+        color: #d3d3d3;
+    }
+    .card p {
+        font-size: 18px;
+        color: #d3d3d3;
+    }
+    
+    .carousel {
+        margin: 40px auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .carousel img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: none;
+        border-radius: 10px;
+    }
+    
+    .carousel img.active {
+        display: block;
+    }
+    
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
+    .indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 5px;
+    }
+    
+    .indicators span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .indicators span.active {
+        background-color: white;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        flex-direction:rown;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .intro{
+        padding: 20px 0;
+        text-align: justify;
+    }
+
+    .card {
+        width: 100%;
+        position: relative;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .prev, .next {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .indicators span {
+        width: 10px;
+        height: 10px;
+    }
+
+    footer{
+     width:100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    #title{
+        text-align: center;
+        vertical-align: center;
+        font-size: 2.2em;
+    }
+
+    header .logo
+    {
+        margin-left: 45%;
+        width: 220px;
+        height: 100px;
+    }
+
+    .intro{
+        padding: 40px 0;
+    }
+
+    .containercard{
+        margin-left: 6%;
+        grid-column: auto auto;
+    }
+
+    .card {
+        width: 42.5%;
+    }
+
+    .carousel {
+        width: 80%;
+    }
+
+    .prev, .next {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .indicators span {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    header{
+        flex-direction: row;
+    }
+
+    #title
+    {
+        margin-left: 2%;
+    }
+
+    .header h1 {
+        font-size: 2.4em;
+    }
+
+    .intro {
+        padding: 50px 0;
+    }
+
+    .card {
+        width: 320px;
+    }
+
+    .containercard
+    {
+        margin-left: 10%;
+    }
+
+    .carousel {
+        width: 600px;
+    }
+
+    .prev, .next {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .indicators span {
+        width: 12px;
+        height: 12px;
+    }
+}

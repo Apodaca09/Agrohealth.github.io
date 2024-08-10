@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroHealth</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="AgroHealth Logo" class="logo">
+            <h1 id="title">AgroHealth</h1>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div>
+            <h2>¿Qué es AgroHealth?</h2>
+            <p>Es un sistema de monitoreo agrícola diseñado para optimizar la salud y productividad de los cultivos mendiante
+               el uso de tecnologías de última generación. Este sistema integra una variedad de sensores que recopilan datos 
+               críticos sobre el suelo, como niveles de nutrientes (nitrógeno, fósforo, potasio), pH, conductividad eléctrica,
+               temperatura y humedad. Estos datos son enviados a una Raspberry Pi, donde son almacenados y procesados para su
+               análisis.
+            </p>
+            <p>
+                Además de la información captada por los sensores, AgroHealth incorpora imágenes multiespectrales obtenidas de
+                satélites como el Sentinel-2, que permiten un análisis profundo de la salud de los cultivos al identificar patrones
+                invisibles al ojo humano, como estrés hídrico o enfermedades incipientes. Estas imágenes, combinadas con datos 
+                meteorológicos y de geolocalización, alimentan un sistema de inteligencia artificial.
+            </p>
+            <p>
+                La IA de AgroHealth analizará toda esta información en tiempo real, generando recomendaciones precisas para los ingenieros agrónomos y agricultores. Estas sugerencias ayudan a optimizar el
+                uso de fertilizantes, riego y otros recursos, maximizando la producción y minimizando el impacto ambiental. Con AgroHealth, los agricultores pueden tomar decisiones más informadas, 
+                basadas en datos concretos, lo que resulta en una agricultura más eficiente y sostenible.
+            </p>
+        </div>
+    </section>
+
+    <div class="containercard">
+        <div class="card">
+            <h2>🌱 Monitoreo del Suelo</h2>
+            <p>Mediciones precisas de nitrógeno, fósforo, potasio, pH, y más con el sensor SOIL-MB-NPKPHCTH-S.</p>
+        </div>
+        <div class="card">
+            <h2>📍 Geolocalización</h2>
+            <p>Datos precisos de ubicación del cultivo mediante el GPS GT-U7.</p>
+        </div>
+        <div class="card">
+            <h2>📡 Comunicación Inalámbrica</h2>
+            <p>Transmisión de datos a larga distancia con el módulo LoRa Ra-01, ideal para áreas remotas.</p>
+        </div>
+        <div class="card">
+            <h2>🖥️ Procesamiento y Almacenamiento</h2>
+            <p>Información procesada en una Raspberry Pi 4 con 5G y almacenada en InfluxDB, replicada en la nube con MQTT.</p>
+        </div>
+        <div class="card">
+            <h2>🌌 Integración de Datos Externos</h2>
+            <p>Acceso a imágenes del satélite Sentinel 2 y datos meteorológicos de OpenWeatherMap para análisis contextual.</p>
+        </div>
+        <div class="card">
+            <h2>🤖 Inteligencia Artificial</h2>
+            <p>Predicciones y recomendaciones basadas en IA para optimizar la salud del cultivo.</p>
+        </div>
+        <div class="card">
+            <h2>☀️ Energía Solar</h2>
+            <p>Funcionamiento autónomo con energía solar para asegurar operación continua en entornos rurales.</p>
+        </div>
+    </div>
+
+        <div class="carousel">
+            <img src="images/logo_whith_background.png" class="active" alt="Logo">
+            <img src="images/esquema.jpg"  alt="Esquema">
+            <img src="images/reconocimiento.jpg" alt="Primer lugar Etapa Local InnovaTec 2024">
+            <img src="images/prototipo.jpg" alt="Prototipo">
+    
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+    
+            <div class="indicators">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <p class="textItem" id="labelMessage"></p>
+    <footer>
+        <div class="brand">
+            <p>(c) AgroHealth 2024</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
